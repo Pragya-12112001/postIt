@@ -1,0 +1,130 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #1f2937;
+}
+
+.page {
+  max-width: 960px;
+  margin: auto;
+  padding: 48px 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Primary Button */
+.primary-btn {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+/* Post Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .posts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Post Card */
+.post-card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.user-badge {
+  background-color: #eef2ff;
+  color: #4338ca;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic  ;
+}
+
+/* Post Actions */
+.post-actions a,
+.post-actions button {
+  color: #6b7280;
+  margin-left: 12px;
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.post-actions a:hover,
+.post-actions button:hover {
+  color: #111827;
+}
+
+.delete-form {
+  display: inline;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #374151;
+  margin-top: 10px;
+}

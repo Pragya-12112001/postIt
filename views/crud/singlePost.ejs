@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Single Post</title>
+  <link rel="stylesheet" href="/singlePost.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 class="section-title">Here is your post</h2>
+    <div class="single-post-card">
+      <h2 class="user">@<%= post.userName %></h2>
+      <p class="content"><%= post.content %></p>
+    </div>
+  </div>
+  
+  <div class="btn-wrapper">
+    <a class="back-btn" href="http://localhost:8080/post">← Back to Posts</a>
+  </div>
+  
+  
+</body>
+</html>

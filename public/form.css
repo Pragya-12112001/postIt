@@ -1,0 +1,145 @@
+/* ===== Reset & Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f8fafc, #e2e8f0);
+  color: #1e293b;
+}
+
+/* Container */
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111827;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #6366f1;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 999px;
+}
+/* ===== Form Card ===== */
+form {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user{
+  font-style: italic;
+  color: #374151;
+}
+
+/* ===== Input Field ===== */
+input[type="text"],
+textarea {
+  font-size: 1rem;
+  padding: 15px 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+  color: #111827;
+}
+
+input[type="text"] {
+  font-weight: 600;
+  color: #374151;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #2563eb;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+/* ===== Button Group ===== */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===== Buttons ===== */
+.submit-btn,
+.back-btn {
+  flex: 1;
+  text-align: center;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.back-btn:hover {
+  background-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .back-btn {
+    width: 100%;
+  }
+}
