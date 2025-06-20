@@ -10,8 +10,9 @@ A simple web project built using **Express** and **EJS**. Users can navigate to 
 
 ## 📁 Project Structure
 
-git clone https://github.com/your-username/post-it.git
-cd post-it
+git clone https://github.com/Pragya-12112001/postIt.git
+
+cd postIt
 
 npm install
 
