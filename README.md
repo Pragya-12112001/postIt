@@ -8,12 +8,22 @@ A simple web project built using **Express** and **EJS**. Users can navigate to 
 - EJS templating engine for dynamic content rendering
 - Minimal routing with a focus on the `/post` endpoint
 
-## 📁 Project Structure
+## 📝 Steps to Follow
 
-git clone https://github.com/Pragya-12112001/postIt.git
+1. **Clone the Repository**
 
-cd postIt
+   ```bash
+   git clone https://github.com/Pragya-12112001/postIt.git
+   cd postIt
 
-npm install
+2. **Install Dependencies**
 
-node index.js
+   npm install
+
+3. **Start the Server**
+
+   node index.js
+
+4. **Open your browser and visit**
+
+   http://localhost:3000/post
